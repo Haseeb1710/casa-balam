@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASA BĀLAM | Handmade Treasures for Little Souls | Milestone 1 Storefront Preview</title>
+  <meta name="description" content="Casa Bālam is a Miami-based family boutique offering artisan handmade toys, children's apparel, and keepsakes inspired by a grandmother's love." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="preview.css" />
+</head>
+<body>
+
+  <!-- FLOATING INTERACTIVE CONTROLS (Landing Page & Architecture Mode Demonstrator) -->
+  <aside class="cb-live-toolbar" aria-label="Milestone 1 Demonstrator Toolbar">
+    <span class="cb-toolbar-badge">Live Controls</span>
+    <label class="cb-toolbar-switch">
+      <input type="checkbox" id="toggle-hide-header" />
+      <span>Hide Header</span>
+    </label>
+    <label class="cb-toolbar-switch">
+      <input type="checkbox" id="toggle-hide-footer" />
+      <span>Hide Footer</span>
+    </label>
+  </aside>
+
+  <!-- HEADER & NAVIGATION SYSTEM -->
+  <header id="cb-site-header" class="cb-header-wrapper transparent-header" role="banner">
+    <!-- Announcement Bar -->
+    <div class="cb-announcement-bar">
+      <div class="cb-container cb-announcement-inner">
+        <p>Free Standard Shipping on Contiguous U.S. Orders $100+ &bull; Artisan Made with Love in Small Batches</p>
+        <div class="cb-top-socials">
+          <a href="https://instagram.com/casabalamboutique" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="cb-top-social-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://facebook.com/casabalamboutique" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="cb-top-social-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="cb-main-header">
+      <div class="cb-container cb-header-inner">
+        
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="cb-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="cb-hamburger-bar"></span>
+          <span class="cb-hamburger-bar"></span>
+          <span class="cb-hamburger-bar"></span>
+        </button>
+
+        <!-- Brand Logo (SVG Vector with PNG fallback) -->
+        <div class="cb-brand-logo">
+          <a href="#top" class="cb-logo-link" aria-label="Casa Bālam Home">
+            <img src="images/casa-balam-logo.svg" onerror="this.onerror=null;this.src='images/casa-balam-logo.png'" alt="Casa Bālam" class="cb-logo-img" />
+          </a>
+        </div>
+
+        <!-- Desktop Primary Menu -->
+        <nav class="cb-nav-desktop" aria-label="Primary navigation">
+          <ul class="cb-menu">
+            <li class="cb-menu-item"><a href="#shop-all">Shop All</a></li>
+            <li class="cb-menu-item">
+              <a href="#toys">
+                Handmade Toys
+                <svg class="cb-chevron-down" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <ul class="cb-dropdown-menu">
+                <li><a href="#abuelas-toys">Abuela’s Toys (Small, Medium, Large)</a></li>
+                <li><a href="#dolls">Artisan Dolls</a></li>
+                <li><a href="#alpaca">Alpaca Collection (Bears, Alpacas, Rabbits, Lions)</a></li>
+              </ul>
+            </li>
+            <li class="cb-menu-item">
+              <a href="#clothing">
+                Children’s Clothing
+                <svg class="cb-chevron-down" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <ul class="cb-dropdown-menu">
+                <li><a href="#girls-dresses">Girls’ Dresses (Ballerina, Embroidered, Tulum)</a></li>
+                <li><a href="#boys-sets">Boys’ Shirts &amp; Sets (Linen, Tulum, Havana)</a></li>
+                <li><a href="#swimwear">Artisan Swimwear</a></li>
+              </ul>
+            </li>
+            <li class="cb-menu-item"><a href="#accessories">Accessories</a></li>
+            <li class="cb-menu-item"><a href="#story">Our Story</a></li>
+            <li class="cb-menu-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="cb-header-actions">
+          <button type="button" class="cb-action-btn" aria-label="Search catalog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <a href="#account" class="cb-action-btn" aria-label="Customer Account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+          <button type="button" class="cb-action-btn" aria-label="View Shopping Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cb-cart-count">2</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="cb-mobile-nav" class="cb-mobile-drawer" aria-hidden="true">
+      <div class="cb-drawer-header">
+        <img src="images/casa-balam-logo.svg" onerror="this.onerror=null;this.src='images/casa-balam-logo.png'" alt="Casa Bālam" class="cb-drawer-logo" />
+        <button type="button" class="cb-drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="cb-mobile-menu">
+        <li><a href="#shop-all">Shop All</a></li>
+        <li><a href="#toys">Handmade Toys</a></li>
+        <li><a href="#clothing">Children’s Clothing</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#story">About Casa Bālam</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="cb-drawer-socials">
+        <a href="https://instagram.com/casabalamboutique" target="_blank" rel="noopener noreferrer" class="cb-drawer-social-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://facebook.com/casabalamboutique" target="_blank" rel="noopener noreferrer" class="cb-drawer-social-link" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </div>
+    <div class="cb-backdrop" id="cb-nav-backdrop"></div>
+  </header>
+
+  <!-- BREADCRUMBS HIERARCHY DEMONSTRATOR -->
+  <div class="cb-breadcrumbs-wrapper">
+    <div class="cb-container">
+      <nav class="cb-breadcrumbs" aria-label="Breadcrumb navigation">
+        <a href="#home">Home</a>
+        <span class="cb-breadcrumb-sep">&rsaquo;</span>
+        <a href="#shop">Shop</a>
+        <span class="cb-breadcrumb-sep">&rsaquo;</span>
+        <a href="#toys">Handmade Toys</a>
+        <span class="cb-breadcrumb-sep">&rsaquo;</span>
+        <a href="#alpaca">Alpaca Collection</a>
+        <span class="cb-breadcrumb-sep">&rsaquo;</span>
+        <span class="cb-breadcrumb-current">Artisan Alpaca Bear (Large)</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO SECTION WITH VIDEO/VISUAL SHOWCASE -->
+  <section class="cb-hero" id="top">
+    <div class="cb-container">
+      <div class="cb-hero-grid">
+        <div class="cb-hero-content">
+          <span class="cb-hero-tag">Miami, Florida &bull; Small-Batch Artisan Keepsakes</span>
+          <h1 class="cb-hero-title">Handmade Treasures for Little Souls</h1>
+          <p class="cb-hero-description">
+            Casa Bālam began with a grandmother’s love. We curate and craft meaningful artisan toys, children’s clothing, and keepsakes designed to celebrate cultural heritage and keep our inner child alive.
+          </p>
+          <div class="cb-hero-actions">
+            <a href="#shop-all" class="cb-btn cb-btn-primary">Explore Collections</a>
+            <a href="#story" class="cb-btn cb-btn-secondary">Read Our Story</a>
+          </div>
+        </div>
+        <div class="cb-hero-visual">
+          <div class="cb-hero-card">
+            <img src="images/2025LittleLocalbyOdettePhoto+Art-1.jpg" alt="Casa Bālam Artisan Toy Collection" class="cb-hero-img" />
+            <div class="cb-hero-floating-badge">
+              <img src="images/casa-balam-icon.svg" onerror="this.onerror=null;this.src='images/casa-balam-icon.png'" alt="Lobito" class="cb-floating-icon" />
+              <div class="cb-floating-text">
+                <h4>Art You Can Hug</h4>
+                <p>Natural Materials &bull; Small Batches</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND COLOR PALETTE & DESIGN TOKENS SHOWCASE -->
+  <section class="cb-section" id="tokens">
+    <div class="cb-container">
+      <div class="cb-section-header">
+        <span class="cb-section-tag">Milestone 1 Architecture</span>
+        <h2 class="cb-section-title">Design Tokens &amp; Color Schemes</h2>
+        <p class="cb-section-subtitle">
+          Bespoke CSS custom properties engineered for high-converting visual harmony, soft contrast, and elegant tactile warmth.
+        </p>
+      </div>
+
+      <!-- Color Swatches Grid -->
+      <div class="cb-swatches-grid">
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #F7F2EA;"></div>
+          <div class="cb-swatch-name">Warm Bone</div>
+          <div class="cb-swatch-hex">#F7F2EA</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #FFFDF9; border-color: #DDD;"></div>
+          <div class="cb-swatch-name">Soft Ivory</div>
+          <div class="cb-swatch-hex">#FFFDF9</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #E8DED1;"></div>
+          <div class="cb-swatch-name">Oatmeal Beige</div>
+          <div class="cb-swatch-hex">#E8DED1</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #F8F1EC;"></div>
+          <div class="cb-swatch-name">Blush Ivory</div>
+          <div class="cb-swatch-hex">#F8F1EC</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #DEC8C3;"></div>
+          <div class="cb-swatch-name">Muted Shell Pink</div>
+          <div class="cb-swatch-hex">#DEC8C3</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #E3EFF2;"></div>
+          <div class="cb-swatch-name">Powder Blue</div>
+          <div class="cb-swatch-hex">#E3EFF2</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #D8B8B4;"></div>
+          <div class="cb-swatch-name">Dusty Blush</div>
+          <div class="cb-swatch-hex">#D8B8B4</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #3B302B;"></div>
+          <div class="cb-swatch-name">Deep Cocoa</div>
+          <div class="cb-swatch-hex">#3B302B</div>
+        </div>
+        <div class="cb-swatch-card">
+          <div class="cb-swatch-color" style="background-color: #F5E3E6;"></div>
+          <div class="cb-swatch-name">Pastel Pink</div>
+          <div class="cb-swatch-hex">#F5E3E6</div>
+        </div>
+      </div>
+
+      <!-- Typography System Cards -->
+      <div class="cb-typography-grid">
+        <div class="cb-typo-card">
+          <span class="cb-typo-badge">Display Headings</span>
+          <h3 class="cb-typo-sample" style="font-weight: 300; letter-spacing: 0.12em;">Montserrat Light (300)</h3>
+          <p class="cb-typo-desc">
+            Applied to H1–H4 with uppercase letter spacing (0.08em–0.12em). Avoids bold or heavy weights to preserve delicate logo elegance.
+          </p>
+        </div>
+        <div class="cb-typo-card">
+          <span class="cb-typo-badge">Body &amp; Paragraphs</span>
+          <p class="cb-typo-sample" style="font-weight: 400; font-size: 1.05rem; line-height: 1.65;">Montserrat Regular (400)</p>
+          <p class="cb-typo-desc">
+            Optimized for effortless long-form reading, storytelling, product descriptions, and transparent store policies.
+          </p>
+        </div>
+        <div class="cb-typo-card">
+          <span class="cb-typo-badge">UI, Badges &amp; Buttons</span>
+          <p class="cb-typo-sample" style="font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;">Montserrat Medium (500)</p>
+          <p class="cb-typo-desc">
+            Used across primary navigation items, action buttons, category tags, and conversion triggers for crisp definition.
+          </p>
+        </div>
+      </div>
+
+      <!-- Milestone 1 Exit Criteria Panel -->
+      <div class="cb-checklist-card">
+        <div class="cb-checklist-header">
+          <div>
+            <h3>Milestone 1 Architecture &amp; Settings Status</h3>
+            <p style="font-size: 0.85rem; color: var(--cb-text-muted);">Technical verification against client specification</p>
+          </div>
+          <span class="cb-badge-verified">All Criteria Met &bull; Ready for Review</span>
+        </div>
+        <ul class="cb-checklist-items">
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Base Store Location</span>
+              <span class="cb-check-desc">Miami, Florida, United States configured in WooCommerce.</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Currency &amp; Physical Units</span>
+              <span class="cb-check-desc">U.S. Dollar (USD, $), Weight: lbs, Dimensions: inches.</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Timezone &amp; Locale</span>
+              <span class="cb-check-desc">Eastern Time (America/New_York), English (United States).</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Address Privacy Guard</span>
+              <span class="cb-check-desc">Private address held strictly for backend taxes/shipping; public displays Miami, FL.</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Brand CSS Variables</span>
+              <span class="cb-check-desc">All 8 section color schemes + pastel pink defined in :root.</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Transparent to Sticky Nav</span>
+              <span class="cb-check-desc">Transitions smoothly to frosted sticky bar on scroll (scroll down to test).</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Breadcrumbs Hierarchy</span>
+              <span class="cb-check-desc">Deep catalog trail: Home › Shop › Category › Subcategory › Product.</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Landing Page Hide Controls</span>
+              <span class="cb-check-desc">Operational via post meta and live toolbar controls (test bottom-right switch).</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Custom Footer Architecture</span>
+              <span class="cb-check-desc">Miami, FL, info@casabalam.net, 239-285-3388, @casabalamboutique, Facebook button, policies, dynamic copyright.</span>
+            </div>
+          </li>
+          <li class="cb-check-item">
+            <span class="cb-check-icon">&check;</span>
+            <div>
+              <span class="cb-check-title">Contiguous U.S. Guard</span>
+              <span class="cb-check-desc">Initial selling and shipping restricted exclusively to 48 contiguous states.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BESPOKE FOOTER WITH INSTAGRAM & FACEBOOK BUTTONS -->
+  <footer id="cb-site-footer" class="cb-site-footer" role="contentinfo">
+    <div class="cb-container">
+      <div class="cb-footer-top">
+        
+        <!-- Column 1: Brand Heritage & Social Links -->
+        <div class="cb-footer-col cb-footer-brand">
+          <a href="#top" class="cb-footer-logo-link">
+            <img src="images/casa-balam-logo.svg" onerror="this.onerror=null;this.src='images/casa-balam-logo.png'" alt="Casa Bālam" class="cb-footer-logo" />
+          </a>
+          <p class="cb-footer-tagline">
+            Handmade treasures for little souls. Born from a grandmother’s love, celebrating cultural heritage, artisan craftsmanship, and the beauty of small-batch keepsakes.
+          </p>
+          <div class="cb-footer-social">
+            <!-- Instagram Button -->
+            <a href="https://instagram.com/casabalamboutique" target="_blank" rel="noopener noreferrer" class="cb-social-icon cb-social-instagram" aria-label="Follow Casa Bālam on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>@casabalamboutique</span>
+            </a>
+            <!-- Facebook Button -->
+            <a href="https://facebook.com/casabalamboutique" target="_blank" rel="noopener noreferrer" class="cb-social-icon cb-social-facebook" aria-label="Follow CASA BALAM Boutique on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Collections -->
+        <div class="cb-footer-col">
+          <h3 class="cb-footer-heading">Collections</h3>
+          <ul class="cb-footer-links">
+            <li><a href="#toys">Handmade Toys</a></li>
+            <li><a href="#abuelas-toys">Abuela’s Toys</a></li>
+            <li><a href="#alpaca">Alpaca Collection</a></li>
+            <li><a href="#clothing">Children’s Clothing</a></li>
+            <li><a href="#accessories">Artisan Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Customer Care -->
+        <div class="cb-footer-col">
+          <h3 class="cb-footer-heading">Customer Care</h3>
+          <ul class="cb-footer-links">
+            <li><a href="#story">About Casa Bālam</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#shipping-policy">Shipping Policy</a></li>
+            <li><a href="#return-policy">Return &amp; Exchange Policy</a></li>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="cb-footer-col">
+          <h3 class="cb-footer-heading">Get in Touch</h3>
+          <ul class="cb-contact-list">
+            <li class="cb-contact-item">
+              <span class="cb-contact-label">Location</span>
+              <span class="cb-contact-val">Miami, Florida</span>
+            </li>
+            <li class="cb-contact-item">
+              <span class="cb-contact-label">Email</span>
+              <a href="mailto:info@casabalam.net" class="cb-contact-val">info@casabalam.net</a>
+            </li>
+            <li class="cb-contact-item">
+              <span class="cb-contact-label">Phone</span>
+              <a href="tel:+12392853388" class="cb-contact-val">239-285-3388</a>
+            </li>
+            <li class="cb-contact-item cb-hours-note">
+              <span class="cb-subtext">We typically respond within 1–2 business days, excluding weekends &amp; holidays.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="cb-footer-bottom">
+        <div class="cb-copyright">
+          <p>&copy; <span id="cb-dynamic-year">2026</span> Casa Bālam. All rights reserved.</p>
+        </div>
+        <div class="cb-footer-disclaimer">
+          <p>Handmade in small batches with non-toxic, natural materials.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="preview.js"></script>
+</body>
+</html>
