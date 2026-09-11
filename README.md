@@ -74,14 +74,18 @@ casa-balam/
 
 ---
 
-## 🚀 Live Vercel Deployment
+## 🚀 Live Demo & Deployment
 
-This project is configured for automated static deployment on [Vercel](https://vercel.com).
-To view the interactive storefront demonstration, visit the live deployment link or deploy via:
+- **Live Storefront Preview**: [https://haseeb1710.github.io/casa-balam/](https://haseeb1710.github.io/casa-balam/)
+- **GitHub Repository**: [https://github.com/Haseeb1710/casa-balam](https://github.com/Haseeb1710/casa-balam)
 
-```bash
-vercel --prod
-```
+### Deploy to Vercel in 1 Click:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Haseeb1710/casa-balam)
+
+Or via Vercel Dashboard:
+1. Navigate to [vercel.com/new](https://vercel.com/new)
+2. Import `Haseeb1710/casa-balam`
+3. Click **Deploy** (zero configuration needed)
 
 ---
 
