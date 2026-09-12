@@ -470,7 +470,7 @@ body.cb-hide-footer .ast-footer-builder-wrap {
   }
   .cb-brand-logo {
     position: absolute;
-    left: 50%;
+    left: calc(50% - 5px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
