@@ -464,6 +464,8 @@ p {
   bottom: 0;
   width: 320px;
   max-width: 85vw;
+  height: 100%;
+  height: 100dvh;
   background-color: var(--cb-soft-ivory);
   z-index: 2000;
   transform: translateX(-100%);
@@ -1113,8 +1115,21 @@ body.hide-footer #cb-site-footer {
 }
 
 @media (max-width: 600px) {
+  /* Announcement bar stacks text + icons vertically on phones */
   .cb-announcement-inner { flex-direction: column; gap: 6px; }
+  .cb-announcement-bar { padding: 10px 16px; }
+  /* Hero needs extra top padding to clear the taller stacked announcement bar */
+  .cb-hero { padding-top: 165px; }
   .cb-footer-top { grid-template-columns: 1fr; gap: 28px; }
   .cb-footer-brand { padding-right: 0; }
   .cb-footer-bottom { flex-direction: column; align-items: flex-start; }
+  /* Hero action buttons stack vertically on small phones */
+  .cb-hero-actions { flex-direction: column; align-items: flex-start; }
+  .cb-hero-actions .cb-btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 375px) {
+  /* Micro-fix for very small phones (iPhone SE etc.) */
+  .cb-hero-tag { font-size: 0.68rem; letter-spacing: 0.12em; padding: 5px 12px; }
+  .cb-live-toolbar { font-size: 0.72rem; padding: 10px 12px; gap: 10px; }
 }
