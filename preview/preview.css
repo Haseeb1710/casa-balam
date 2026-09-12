@@ -1104,7 +1104,22 @@ body.hide-footer #cb-site-footer {
 /* Responsive */
 @media (max-width: 991px) {
   .cb-nav-desktop { display: none; }
-  .cb-mobile-toggle { display: flex; }
+  .cb-mobile-toggle { display: flex; z-index: 11; }
+  .cb-header-inner {
+    position: relative;
+  }
+  .cb-brand-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .cb-header-actions {
+    margin-left: auto;
+    z-index: 11;
+    gap: 10px;
+  }
   .cb-hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .cb-hero { padding-top: 140px; min-height: auto; }
   .cb-hero-img { height: 380px; }
@@ -1115,6 +1130,10 @@ body.hide-footer #cb-site-footer {
 }
 
 @media (max-width: 600px) {
+  .cb-logo-img { height: 44px; }
+  .cb-header-wrapper.cb-header-is-sticky .cb-logo-img { height: 38px; }
+  .cb-header-actions { gap: 8px; }
+  .cb-action-btn { padding: 6px; }
   /* Announcement bar stacks text + icons vertically on phones */
   .cb-announcement-inner { flex-direction: column; gap: 6px; }
   .cb-announcement-bar { padding: 10px 16px; }
