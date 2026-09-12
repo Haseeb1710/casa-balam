@@ -46,21 +46,33 @@
   function initMobileDrawer() {
     const toggleBtn = document.querySelector('.cb-mobile-toggle');
     const drawer = document.getElementById('cb-mobile-nav');
-    const backdrop = document.getElementById('cb-nav-backdrop');
     const closeBtn = document.querySelector('.cb-drawer-close');
 
-    if (!toggleBtn || !drawer || !backdrop) return;
+    if (!toggleBtn || !drawer) return;
+
+    // Self-healing: create backdrop if somehow missing from DOM
+    let backdrop = document.getElementById('cb-nav-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.id = 'cb-nav-backdrop';
+      backdrop.className = 'cb-backdrop';
+      document.body.appendChild(backdrop);
+    }
 
     function openDrawer() {
       drawer.classList.add('is-open');
+      drawer.removeAttribute('aria-hidden');
       backdrop.classList.add('is-active');
       toggleBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
     }
 
     function closeDrawer() {
       drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
       backdrop.classList.remove('is-active');
       toggleBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     }
 
     toggleBtn.addEventListener('click', function(e) {
@@ -77,12 +89,18 @@
 
     backdrop.addEventListener('click', closeDrawer);
 
+    // Close drawer when a menu link is tapped (navigates to section)
+    drawer.querySelectorAll('.cb-mobile-menu a').forEach(function(link) {
+      link.addEventListener('click', closeDrawer);
+    });
+
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
         closeDrawer();
       }
     });
   }
+
 
   /**
    * Interactive Landing Page Display Controls (Header/Footer hide simulation)
